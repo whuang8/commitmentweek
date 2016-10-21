@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 	def create
-		render plain: "hi"
+		
 	end
 
 	def destroy
