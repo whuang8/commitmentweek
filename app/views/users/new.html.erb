@@ -1,5 +1,27 @@
-<% if current_user %>
-  <%= "Welcome #{current_user.name}" %>
-<% else %>
-  <%= link_to "Sign in with Github", "/auth/github" %>
-<% end %>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<nav class="navbar" style="background: clear;">
+		  		<a class="navbar-brand" href="#">
+		    	<img src="https://pbs.twimg.com/profile_images/534078456103845888/dj8AH8NL.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		   		[commit]ment week
+	  			</a>
+	  			
+			</nav>
+
+		<% if current_user %>
+	  		<%= "Welcome #{current_user.name}" %>
+		<% else %>
+	  		<%= link_to "Sign in with Github", "/auth/github" %>
+		<% end %>
+		   
+		</div>
+	</div>
+	
+</body>
+</html>
