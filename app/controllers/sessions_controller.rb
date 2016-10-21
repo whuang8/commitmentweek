@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 	def create
-		
+		redirect_to root_url
 	end
 
 	def destroy
