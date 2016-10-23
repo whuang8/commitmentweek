@@ -1,4 +1,9 @@
-@import "font-awesome";
-@import "users";
 @import "bootstrap-sprockets";
+@import "bootswatch/simplex/variables";
 @import "bootstrap";
+@import "bootswatch/simplex/bootswatch";
+@import "bootstrap-social";
+@import "font-awesome";
+@import 'hover';
+@import "users";
+

@@ -4,6 +4,7 @@ class User < ApplicationRecord
       user.provider = auth["provider"]
       user.uid = auth["uid"]
       user.name = auth["info"]["name"]
+      user.username = auth["extra"]["raw_info"]["login"]
     end
   end
 end
