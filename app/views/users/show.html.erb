@@ -1,0 +1,56 @@
+<div class="container">
+	<div class="row profile">
+		<div class="col-md-3">
+			<div class="profile-sidebar">
+				<!-- SIDEBAR USERPIC -->
+				<div class="profile-userpic">
+					<img src=<%=@user.image%> class="img-responsive" alt="">
+				</div>
+				<!-- END SIDEBAR USERPIC -->
+				<!-- SIDEBAR USER TITLE -->
+				<div class="profile-usertitle">
+					<div class="profile-usertitle-name">
+						Marcus Doe
+					</div>
+					<div class="profile-usertitle-job">
+						Purdue Hacker
+					</div>
+				</div>
+				<!-- END SIDEBAR USER TITLE -->
+				<!-- SIDEBAR BUTTONS -->
+				<div class="profile-userbuttons">
+					<%= link_to "/auth/github", class: 'btn btn-block btn-social btn-github' do %>
+	    				<span class="fa fa-github"></span> Follow on Github
+					<% end %>
+				</div>
+				<!-- END SIDEBAR BUTTONS -->
+				<!-- SIDEBAR MENU -->
+				<div class="profile-usermenu">
+					<ul class="nav">
+						<li class="active">
+							<a href="#">
+							<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+							Today's Commits </a>
+						</li>
+						<li>
+							<a href="#">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+							All Commits </a>
+						</li>
+												<li>
+							<a href="#">
+							<i class="fa fa-info-circle" aria-hidden="true"></i>
+							Info </a>
+						</li>
+					</ul>
+				</div>
+				<!-- END MENU -->
+			</div>
+		</div>
+		<div class="col-md-9">
+            <div class="profile-content">
+			   
+            </div>
+		</div>
+	</div>
+</div>

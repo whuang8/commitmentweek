@@ -3,5 +3,10 @@ Rails.application.routes.draw do
   root to: "application#welcome"
   get "/auth/:provider/callback" => "sessions#create"
   get "/signout" => "sessions#destroy", :as => :signout
-  resources :users
+  resources :users do
+  	member do
+    	get :leaderboard
+  	end
+  end
+  resources :days
 end

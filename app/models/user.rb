@@ -5,6 +5,7 @@ class User < ApplicationRecord
       user.uid = auth["uid"]
       user.name = auth["info"]["name"]
       user.username = auth["extra"]["raw_info"]["login"]
+      user.image = auth["info"]["image"]
     end
   end
 end

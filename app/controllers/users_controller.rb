@@ -1,7 +1,12 @@
 class UsersController < ApplicationController
+
+	def index
+		@users = User.all
+	end
+
 	def show
-		user = User.find_by(uid: params[:id])
-		response = HTTParty.get "https://api.github.com/users/#{user.username}/events/public"
+		@user = User.find_by(uid: params[:id])
+		response = HTTParty.get "https://api.github.com/users/#{@user.username}/events/public"
 		
 		events = JSON.parse(response.body)
 		
@@ -13,8 +18,10 @@ class UsersController < ApplicationController
 				end
 			end
 		end		
+	end
 
-		render plain: events
+	def leaderboard
+		@users = User.all
 	end
 
 end
