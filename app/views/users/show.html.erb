@@ -10,7 +10,7 @@
 				<!-- SIDEBAR USER TITLE -->
 				<div class="profile-usertitle">
 					<div class="profile-usertitle-name">
-						Marcus Doe
+						<%=@user.name%>
 					</div>
 					<div class="profile-usertitle-job">
 						Purdue Hacker
@@ -49,7 +49,9 @@
 		</div>
 		<div class="col-md-9">
             <div class="profile-content">
-			   
+			   <% @commits.each do |commit|%>
+			   		<p><%= commit %></p>
+			   <% end %>
             </div>
 		</div>
 	</div>
